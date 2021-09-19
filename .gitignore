@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.env
+
+
+__pycache__
+*.py[cod]
+credentials.py
+website/js/config.js

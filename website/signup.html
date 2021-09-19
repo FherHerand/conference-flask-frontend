@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Asistencia</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <!-- MDBootstrap Datatables  -->
+  <link href="css/addons/datatables.min.css" rel="stylesheet">
+  <style>
+    #my_camera {
+      width: 320px;
+      height: 240px;
+    }
+  </style>
+</head>
+
+<body onload="init()">
+  <div class="d-flex" id="wrapper">
+    <div id="page-content-wrapper">
+      <div class="row">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg navbar-dark blue-gradient">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="./login.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+            </ul>
+            <span class="navbar-brand">Asistencia</span>
+          </nav>
+        </div>
+      </div>
+
+      <div style="margin-top:20px;">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <div id="content" class="flex-center flex-column">
+              <form class="text-center border border-light p-5" action="#!">
+                <h1 class="h3 mb-3 font-weight-normal" id="titleheader">Registrar una cuenta</h1>
+                <input type="name" id="name" class="form-control mb-4" placeholder="Nombre" required>
+                <input type="text" id="username" class="form-control mb-4" placeholder="Usuario" required>
+                <input type="password" id="password" class="form-control mb-4" placeholder="Contraseña" required>
+                <input type="password" id="password_confirm" class="form-control mb-4"
+                  placeholder="Confirmar contraseña" required>
+
+                <span class="badge badge-danger badge-pill" id="indicator">✕</span>
+                <div id="my_camera"></div>
+                <div id="results"></div>
+                <input type="button" class="btn blue-gradient btn-block my-4" value="Tomar foto"
+                  onclick="take_snapshot()">
+                <button type="button" class="btn purple-gradient btn-block my-4" onclick="register()">Registrar</button>
+              </form>
+
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <div id="spinner">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+
+
+      <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- MDBootstrap Datatables  -->
+      <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+      <script type="text/javascript" src="js/webcamjs/webcam.min.js"></script>
+      <script src="js/config.js"></script>
+      <script src="js/controllers/signup.js"></script>
+</body>
+
+</html>

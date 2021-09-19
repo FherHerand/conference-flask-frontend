@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Asistencia</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <!-- MDBootstrap Datatables  -->
+  <link href="css/addons/datatables.min.css" rel="stylesheet">
+</head>
+
+<body onload="init()">
+  <div class="d-flex" id="wrapper">
+    <div class="border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading text-dark">MENÚ</div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action text-dark" onclick="addStudentView()">Agregar
+          estudiante</a>
+      </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action text-dark" onclick="listStudentView()">Ver
+          estudiantes</a>
+      </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action text-dark" onclick="addAttendaceView()">Agregar
+          asistencia</a>
+      </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action text-dark" onclick="listAttendanceView()">Ver
+          asistencias</a>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <div class="row">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg navbar-dark blue-gradient">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" id="menu-toggle" href="#">Menú
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+            </ul>
+            <span class="navbar-brand" id="username"></span>
+            <img id="profile" src="" height="45">
+            <button class="btn peach-gradient" type="button" onclick="logout()">Salir</button>
+          </nav>
+
+          <nav class="navbar navbar-expand-lg fixed-bottom navbar-dark blue-gradient">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Start your project here-->
+      <div style="margin-top:20px;">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <div id="content" class="flex-center flex-column">
+
+            </div>
+            <div class="d-flex justify-content-center">
+              <div id="spinner">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+      </div>
+      <!-- /Start your project here-->
+      </div-->
+
+
+
+      <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- MDBootstrap Datatables  -->
+      <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+      <script src="js/config.js"></script>
+      <script src="js/controllers/index.js"></script>
+</body>
+
+</html>
