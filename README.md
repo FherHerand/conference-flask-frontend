@@ -1,4 +1,4 @@
-# conference-rekognition-app
+# conference-flask-frontend
 
 ## Server
 
