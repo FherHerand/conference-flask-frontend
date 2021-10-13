@@ -28,10 +28,14 @@ export FLASK_APP=server
 export FLASK_ENV=development
 flask run
 
-# Windows
+# Windows (cmd)
 set FLASK_APP=server
 set FLASK_ENV=development
-$env:FLASK_APP = "server"
+python -m flask run
+
+# Windows (Powershell)
+$env:FLASK_APP="server"
+$env:FLASK_ENV="development"
 python -m flask run
 ```
 
