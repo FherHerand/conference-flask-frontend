@@ -20,6 +20,8 @@ def login():
     print(content)
     return {'login': True}
 
+
+
 @app.route('/test')
 @app.route('/test/<name>')
 def test(name=None):
